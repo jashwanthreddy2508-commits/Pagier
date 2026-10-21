@@ -1,0 +1,158 @@
+
+.app-shell {
+  width: min(100% - 32px, 680px);
+  margin: 0 auto;
+  padding: 64px 0;
+}
+
+.page-header {
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.page-header h1,
+.messages-section h2 {
+  margin: 0;
+  font-family: "Segoe UI", sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.page-header h1 {
+  font-size: clamp(2rem, 7vw, 2.8rem);
+}
+
+.page-header > p:last-child {
+  margin: 10px 0 0;
+  color: #718096;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #5576d8;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.composer-card {
+  padding: 26px;
+  border: 1px solid #e7ecf3;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgb(37 55 85 / 7%);
+}
+
+.message-form {
+  display: grid;
+  gap: 18px;
+}
+
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon svg {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  width: 20px;
+  height: 20px;
+  color: #8995a5;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.message-form input {
+  width: 100%;
+  padding: 12px 14px 12px 44px;
+  border: 1px solid #dce3ed;
+  border-radius: 10px;
+  outline: none;
+  background: #fbfcfe;
+  color: #202b38;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.message-form input:focus {
+  border-color: #6684e4;
+  box-shadow: 0 0 0 3px rgb(102 132 228 / 16%);
+}
+
+.message-form button {
+  justify-self: center;
+  padding: 11px 20px;
+  border: 0;
+  border-radius: 10px;
+  background: #526fd0;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 160ms ease, transform 160ms ease;
+}
+
+.message-form button:hover {
+  transform: translateY(-1px);
+  background: #405cba;
+}
+
+.message-form button:focus-visible {
+  outline: 3px solid rgb(82 111 208 / 35%);
+  outline-offset: 3px;
+}
+
+.message-form [role="alert"],
+.messages-section [role="alert"] {
+  margin: 0;
+  color: #b42318;
+  font-size: 0.9rem;
+}
+
+.messages-section {
+  display: grid;
+  gap: 14px;
+  margin-top: 38px;
+}
+
+.messages-section h2 {
+  margin-bottom: 4px;
+  font-size: 1.45rem;
+}
+
+.message-card {
+  padding: 18px 20px;
+  border: 1px solid #e7ecf3;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 5px 18px rgb(37 55 85 / 4%);
+}
+
+.message-card h3 {
+  margin: 0 0 7px;
+  color: #526fd0;
+  font-size: 0.98rem;
+}
+
+.message-time {
+  display: block;
+  margin-bottom: 9px;
+  color: #8995a5;
+  font-size: 0.8rem;
+}
+
+.message-card p {
+  margin: 0;
+  color: #566579;
+  line-height: 1.65;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .app-shell {
+    padding: 40px 0;
+  }
+
+  .composer-card {
+    padding: 20px;
+  }
+}
